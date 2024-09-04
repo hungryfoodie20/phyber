@@ -1,0 +1,112 @@
+/*----------------------------------------*/
+/* SERVICE CSS START
+/*----------------------------------------*/
+.service {
+    &__area {
+      
+      .border {
+        &-b1 {
+          box-shadow: #026BDE 0px 0px 0px 5px;
+        }
+        &-b2 {
+          box-shadow: #026BDE 0px 0px 0px 5px;
+        } 
+      }
+    }
+
+    &__item {
+      min-height: 22rem;
+      border-radius: 15px;
+      border: 1px solid var(--white-3);
+      background-color: var(--white);
+      padding: 35px 10px;
+      text-align: center;  
+      transition: var(--transition); 
+      margin-bottom: 10px;
+      &:hover {
+        .service__icon img {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    &__icon {
+      width: 80px;
+      height: 75px; 
+      border-radius: 25px;
+      background-color: #2a6dbd21;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      margin: 0 auto;
+      img {
+        transition: var(--transition);
+      }
+    }
+
+    &__title {
+      color: var(--black-2); 
+      font-size: 22px; 
+      font-weight: 600;
+      line-height: 1.4;
+      padding: 15px 0px 10px;
+      // max-width: 185px;
+      min-height: 5rem;
+      margin: 0 auto;
+    }
+
+    &__title-wrap {
+      text-align: center; 
+      padding-bottom: 4rem;
+      margin-top: 2rem;
+      // h2 {
+      //   span {
+      //     display: block;
+      //   }
+      // }
+    }
+    
+}
+@media (min-width: 1200px) {
+  .col-xl-2 {
+      flex: 0 0 auto;
+      width: 19%; /* Set width to 19% */
+  }
+}
+/* Container element with relative positioning */
+.shadow-container {
+  position: relative;
+  width: fit-content; /* Adjust as needed */
+}
+// .shadowed-container::after {
+  // background-image: radial-gradient(closest-side, #061be3, transparent);}
+// /* Element that will have the shadow */
+.shadowed-element {
+  position: relative; /* Ensure it's positioned relative to its container */
+  background: #fff; /* Background color for visibility */
+  padding: 1rem;
+  z-index: 1; /* Ensure it's above the shadow */
+}
+
+// /* Pseudo-element for shadow */
+// .shadowed-element::after {
+//   content: "";
+//   position: absolute;
+//   top: -20rem;
+//   left: 59rem;
+//   right: -99rem;
+//   bottom: 0rem;
+//   background-image: radial-gradient(closest-side, #ffe5e1, transparent);
+//   z-index: 2;
+// }
+.shadowed-element::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Align to the bottom of the parent */
+  right: 0; /* Align to the right of the parent */
+  width: 20rem; /* Adjust the width of the spot */
+  height: 20rem; /* Adjust the height of the spot */
+  background-image: radial-gradient(closest-side, #ffe5e1, transparent);
+  z-index: -1; /* Place it behind the content */
+  border-radius: 50%; /* Make it circular */
+}

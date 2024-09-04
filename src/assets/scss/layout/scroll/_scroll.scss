@@ -1,0 +1,36 @@
+.scrollup {
+    color: #000000;
+    // transition: var(--transition);
+    position: fixed;
+    right: 0rem;
+    bottom: 8rem;
+    transform: rotate(90deg);
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.scrollup:hover{
+    color: var(--color-white);
+}
+/* ########################## Big Media Query medium Device ######################### */
+@media screen and (max-width: 1250px) {
+    .scrollup {
+        // right: -1.2rem;
+        bottom: 8rem;
+    }    
+}
+/* ########################## Media Query medium Device ######################### */
+@media screen and (max-width: 1024px) {
+    .scrollup {
+        // right: -2.3rem;
+        bottom: 8rem;
+    }  
+}
+
+/* ########################## Media Query Small Device ######################### */
+@media screen and (max-width: 700px) {
+    .scrollup {
+        display: none;
+    }
+
+}

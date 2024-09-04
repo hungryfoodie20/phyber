@@ -1,0 +1,113 @@
+// .contact{
+//     // background-image: url(@/assets/imgs/contactus/imgcontact.png); /* Update with your image path */
+//     background-image: url(@/assets/imgs/contactus/contactimg.svg); /* Update with your image path */
+//     background-size: cover;
+//     background-color: #e80a0a;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     height: 90vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+.contact {
+  background-image: url(/src/assets/imgs/contactus/contactimg.svg),
+    radial-gradient(circle at center, var(--blue-2), var(--blue-2) 65%);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  // height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.react-international-phone-input-container .react-international-phone-input {
+  width: -webkit-fill-available;
+  padding: 1.3rem 0.7rem;
+  margin: 10px 0px;
+}
+.react-international-phone-flag-emoji {
+  width: var(--react-international-phone-flag-width, 30px);
+  height: var(--react-international-phone-flag-height, 35px);
+  box-sizing: border-box;
+}
+.react-international-phone-country-selector-button__button-content:hover {
+  background-color: transparent;
+}
+// .contact-form-container {
+//   background-image: url(@/assets/imgs/contactus/imgcontact.png); /* Update with your image path */
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   height: 90vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.contact-form {
+  // background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 0px;
+  width: 100%;
+  // width: 500px;
+  justify-content: center;
+  color: white;
+}
+.form-control {
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 0.6rem 0.75rem;
+}
+.contact-form button {
+  background-color: transparent;
+  margin-bottom: 0rem;
+  padding: 0px 0rem;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.submitBtn {
+  color: rgb(255, 255, 255) !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1.25rem;
+  font-weight: 400 !important;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer !important;
+  border: 2px solid var(--primary) !important;
+  border-radius: 0.5rem !important;
+  background-color: var(--primary) !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.submitBtn:hover {
+  color: rgb(255, 255, 255) !important;
+  border: 2px solid #245ea5 !important;
+  border-radius: var(--bs-btn-border-radius);
+  background-color: #245ea5 !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+// .contact-form button:hover {
+//   background-color: transparent;
+// }
+.contactsubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactsubmit > img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .submitbtn {
+    padding: 7px 6rem !important;
+  }
+}

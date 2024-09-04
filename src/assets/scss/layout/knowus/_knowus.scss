@@ -1,0 +1,33 @@
+.knowus {
+  &__img1 {
+    width: 100%;
+  }
+  &__img2 {
+    width: 93%;
+  }
+  &__text {
+    font-size: 19px;
+  }
+  &__bg {
+background-color: var(--blue-1);
+  }
+  &__title-wrap {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+}
+.position-relative {
+  position: relative;
+}
+
+.knowus__img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+
+
