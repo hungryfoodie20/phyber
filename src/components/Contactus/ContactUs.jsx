@@ -1,64 +1,3 @@
-// import { serviceOne as data } from "@/data/knowus";
-// import { useState } from "react";
-// // import flagImage from "@/assets/imgs/contactus/indian-flag.png"; // Import the flag image
-// import { PhoneInput } from "react-international-phone";
-// import "react-international-phone/style.css";
-// export default function ContactUs() {
-//   const [phone, setPhone] = useState("");
-//   return (
-//     <section className="service__area pt-110 pb-110 mt-5" id="contactus">
-//       <div className="container ">
-//         <div className="contact">
-//           {/* <div className="contact-form-container"> */}
-//           <form className="contact-form row">
-//             <div className="col-xl-6">
-//               <div className="form-group">
-//                 <input
-//                   type="text"
-//                   className="form-control"
-//                   placeholder="Name"
-//                 />
-//               </div>
-//               <div
-//                 className="row g-3"
-//                 // style={{ display: "flex", gap: "1rem" }}
-//               >
-//                 <div className="form-group col-xl-6 col-md-6">
-//                   {/* <img src={flagImage} className="img-fluid" alt="Flag" /> */}
-//                   <PhoneInput
-//                     defaultCountry="in"
-//                     value={phone}
-//                     onChange={(phone) => setPhone(phone)}
-//                   />
-//                 </div>
-//                 <div className="form-group col-xl-6 col-md-6">
-//                   <input
-//                     type="email"
-//                     className="form-control"
-//                     placeholder="Email"
-//                   />
-//                 </div>
-//               </div>
-//               <div className="form-group">
-//                 <textarea
-//                   className="form-control"
-//                   rows="4"
-//                   placeholder="Message"
-//                 ></textarea>
-//               </div>
-//             </div>
-//             <div className="col-xl-5 contactsubmit">
-//               <button type="submit" className="btn submitbtn btn-block">
-//                 Know us better
-//               </button>
-//               <h1>Get in touch</h1>
-//             </div>
-//           </form>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { PhoneInput } from "react-international-phone";
@@ -80,20 +19,30 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData.name, phone, formData.email, formData.message);
+    const isPhoneValid = phone.trim() !== "" && phone.length > 3;
+    if (
+      !formData.name ||
+      !isPhoneValid ||
+      !formData.email ||
+      !formData.message
+    ) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    // console.log(formData.name, phone, formData.email, formData.message);
 
     // Use EmailJS to send the form data
     emailjs
       .send(
-        "service_2ix9hvk", // Replace with your service ID
-        "template_bid360b", // Replace with your template ID
+        "service_awx83nh", // Replace with your service ID
+        "template_k58ieys", // Replace with your template ID
         {
           name: formData.name,
           mobile: phone,
           email: formData.email,
           message: formData.message,
         },
-        "YxeoYNZzXmlUvA4Es" // Replace with your public key
+        "CfMJhzl8fzW-AaG5r" // Replace with your public key
       )
       .then(
         (result) => {
@@ -186,3 +135,10 @@ export default function ContactUs() {
     </section>
   );
 }
+// name- {{{name}}}
+
+// email- {{{email}}}
+
+// monile no.-{{{mobile}}}
+
+// message- {{{message}}}

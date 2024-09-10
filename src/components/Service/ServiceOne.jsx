@@ -2,14 +2,16 @@ import { serviceOne as data } from "@/data/service";
 
 export default function ServiceOne() {
   return (
-    <section className="service__area pt-110 pb-110 overflow-hidden" id="benefits">
+    <section className="service__area pt-110 pb-110 overflow-hidden" id="benefits" style={{
+  // <section className="service__area pt-110 pb-110 overflow-hidden" id="benefits" style={{height: "100vh",
+    backgroundColor: "rgba(225, 237, 255, 0.39)"}}>
       <div>
         <div className="row">
           <div className="col-xl-12">
-            <div className="service__title-wrap">
+            <div className="service__title-wrap fade-slide top">
               {data.title && (
                 <span
-                  className="section-title move-line-3d"
+                  className="section-title move-line-3d "
                   style={{
                     fontSize: "2rem",
                     margin: "11px auto",
@@ -30,7 +32,7 @@ export default function ServiceOne() {
             {data.services.map((service, index) => (
               <div
                 key={index}
-                className={`col-xl-2 col-lg-3 col-md-6 ${service.animation.name}`}
+                className={`col-xl-2 col-lg-3 col-md-5 col-sm-5 ${service.animation.name}`}
               >
                 <div className={`service__item ${service.classNames}`}>
                   <div className="service__icon">

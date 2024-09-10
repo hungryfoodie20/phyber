@@ -18,9 +18,12 @@ export default function LayoutOne({
   return (
     <>
       {/* <div style={{backgroundColor:"red"}}> */}
-        {/* {options.header && <HeaderOne />} */}
+        {options.header && <HeaderOne />}
         {/* {options.offcanvas && <Offcanvas />} */}
+         {/* {children} */}
+         {/* <main className="main-content" style={{paddingTop:"3rem"}}> */}
         {children}
+      {/* </main>  */}
       {/* </div> */}
       {options.animation && <AnimationClient />}
       {/* {options.footer && <FooterOne />} */}

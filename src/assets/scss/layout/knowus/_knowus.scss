@@ -9,13 +9,14 @@
     font-size: 19px;
   }
   &__bg {
-background-color: var(--blue-1);
+    background-color: var(--blue-1);
+    padding: 0rem 0.5rem;
   }
   &__title-wrap {
     text-align: center;
     padding-bottom: 2rem;
     margin-top: 3rem;
-}
+  }
 }
 .position-relative {
   position: relative;
@@ -27,7 +28,3 @@ background-color: var(--blue-1);
   object-fit: cover;
   border-radius: 15px;
 }
-
-
-
-

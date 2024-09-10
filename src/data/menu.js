@@ -15,7 +15,7 @@ const menus = [
     link: "#about_Us",
   },
   {
-    name: "Conatct",
+    name: "Contact",
     link: "#contactus",
   },
 ];

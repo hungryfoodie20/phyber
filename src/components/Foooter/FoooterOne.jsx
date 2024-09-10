@@ -5,7 +5,29 @@ import SocialImg4 from "@/assets/imgs/footer/footerImg4.png";
 import Footerlogo from "@/assets/imgs/footer/footerlogo.png";
 import Phone from "@/assets/imgs/footer/phone.png";
 import Mail from "@/assets/imgs/footer/mail.png";
+import { HashLink } from 'react-router-hash-link';
 export default function FooterOne() {
+
+
+const handleHashLinkClick = (e, link) => {
+  e.preventDefault(); // Prevent the default hash behavior
+
+  const targetElement = document.querySelector(link);
+
+  if (targetElement) {
+    // Get the top position of the target element relative to the document
+    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+    // Calculate the scroll position with a 5rem (80px) offset
+    const offsetPosition = elementPosition - 80; // Adjust 80px based on 5rem
+
+    // Scroll to the calculated position smoothly
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+};
   return (
     <footer className="bg-light text-center text-lg-start mt-5">
       <div className="footerbg" style={{ backgroundColor: "#000C1C" }}>
@@ -21,23 +43,24 @@ export default function FooterOne() {
             <h5 className="text-uppercase text-white">Links</h5>
             <ul className="list-unstyled mb-0">
               <li className="my-3">
-                <a href="#categories" className="colorGray">
+                <a href="#categories" className="colorGray" onClick={(e) => handleHashLinkClick(e, "#categories")}>
                   Categories
                 </a>
               </li>
               <li className="my-3">
-                <a href="#benefits" className="colorGray">
+                <a href="#benefits" className="colorGray" onClick={(e) => handleHashLinkClick(e, "#benefits")}>
                   Benefits
                 </a>
               </li>
               <li className="my-3">
-                <a href="#about_Us" className="colorGray">
+                <a href="#about_Us" className="colorGray" onClick={(e) => handleHashLinkClick(e, "#about_Us")}>
                   About Us
                 </a>
               </li>
+
               <li className="my-3">
-                <a href="#contactus" className="colorGray">
-                  Conatct
+                <a href="#contactus" className="colorGray"  onClick={(e) => handleHashLinkClick(e, "#contactus")} >
+                  Contact
                 </a>
               </li>
             </ul>
@@ -49,9 +72,9 @@ export default function FooterOne() {
                 {" "}
                 <img className="me-2" src={Phone} alt="Phone" /> +91 9611077318
               </li>
-              <li>
+              <li style={{display: "flex"}}>
                 {" "}
-                <img className="me-3" src={Mail} style={{display: "flex"}} alt="Mail" />
+                <img className="me-3" src={Mail}  alt="Mail" />
                 marketing@phybercare.com
               </li>
             </ul>
@@ -61,7 +84,7 @@ export default function FooterOne() {
           className="text-center footersocial"
           //   style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
         >
-          <div className="text-white">© 2024 Phyber*Privacy*Terms</div>
+          <div className="text-white">© 2024 phyber All Rights Reserved </div>
           <div className="d-flex align-items-center justify-content-center gap-3">
             <a
               href="https://www.linkedin.com/company/phybercare/"

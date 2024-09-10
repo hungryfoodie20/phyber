@@ -6,7 +6,7 @@ import ServiceOneImageFive from "@/assets/imgs/icon/img5.png";
 
 export const serviceOne = {
   title: {
-    sliceOne: "Why should you choose Phyber",
+    sliceOne: "Why should you choose phyber",
   },
   services: [
     {

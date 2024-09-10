@@ -1,6 +1,91 @@
-.heroColor{
-    color: var(--secondary);
+.heroColor {
+  // color: var(--secondary);
+  color: var(--primary);
 }
-.heroColorSecoundry{
-    color: #232323;
+.heroColorSecoundry {
+  color: #232323;
+}
+.heropad {
+  margin-top: 0rem;
+}
+// .hero-contain {
+//   // height: 100vh;
+// }
+.img-responponsive-mac{
+  margin-top: 6rem;
+}
+.hero-img-pos {
+  justify-content: end;
+}
+.hero-img-pos > img {
+  width: 100%;
+}
+// .hero-btn {
+//   padding: 0rem 1.5rem;
+// }
+.mobile-bg {
+  height: 100%;
+  position: relative;
+//   background-image: url(@/assets/imgs/hero/hero-md-bg.svg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+}
+@media screen and (max-width: 991px) {
+  .heropad {
+    margin-top: 6rem;
+  }
+  .hero-contain {
+    height: max-content;
+  }
+  .hero-img-pos {
+    justify-content: center;
+  }
+  .hero-img-pos > img {
+    width: 70%;
+  }
+  .img-responponsive-mac{
+    margin-top: 0rem;
+  }
+  .mobile-bg::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 100%;  /* Ensure it is fully contained */
+    max-width: 100%; /* You can adjust this to control the image size */
+    background-image: url(@/assets/imgs/hero/hero-md-bg.svg);
+    background-size: contain; /* Ensures the image is contained */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    height: 100%;
+  }
+  
+}
+// @media screen and (max-width: 400px) {
+//   .hero-btn {
+//     padding: 0.5rem 0.5rem;
+//   }
+// }
+@media screen and (max-width: 500px) {
+  .hero-img-pos > img {
+    width: 100%;
+  }
+  .mobile-bg::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 100%;  /* Ensure it is fully contained */
+    max-width: 100%; /* You can adjust this to control the image size */
+    background-image: url(@/assets/imgs/hero/hero-md-bg.svg);
+    background-size: contain; /* Ensures the image is contained */
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    height: 100%;
+  }
 }

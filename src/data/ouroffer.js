@@ -29,25 +29,25 @@ export const serviceOne = {
           title: "Elderly care",
           icon: OfferOneImage5,
           animation: { name: "fade-slide top" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Nanny",
           icon: OfferOneImage6,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Home Nursing",
           icon: OfferOneImage7,
           animation: { name: "fade-slide left" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Pathology",
           icon: OfferOneImage8,
           animation: { name: "fade-slide right" },
-          link: "#",
+          link: "#contactus",
         },
       ],
     },
@@ -58,25 +58,25 @@ export const serviceOne = {
           title: "Wellness Programs",
           icon: OfferOneImageOne,
           animation: { name: "fade-slide top" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Mental Wellness",
           icon: OfferOneImageTwo,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Interactive Webinars",
           icon: OfferOneImageThree,
           animation: { name: "fade-slide left" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Doctor on call",
           icon: OfferOneImageFour,
           animation: { name: "fade-slide right" },
-          link: "#",
+          link: "#contactus",
         },
       ],
     },
@@ -87,25 +87,25 @@ export const serviceOne = {
           title: "Doctor Consultation",
           icon: OfferOneImage9,
           animation: { name: "fade-slide top" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Pharmacy",
           icon: OfferOneImage10,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Health Checkup",
           icon: OfferOneImage11,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Dental Checkup",
           icon: OfferOneImage12,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
       ],
     },
@@ -116,98 +116,27 @@ export const serviceOne = {
           title: "Health Essentials",
           icon: OfferOneImage13,
           animation: { name: "fade-slide top" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Yoga Essentials",
           icon: OfferOneImage14,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Wearables",
           icon: OfferOneImage15,
           animation: { name: "fade-slide top" },
-          link: "#",
+          link: "#contactus",
         },
         {
           title: "Lifestyles Benefits",
           icon: OfferOneImage16,
           animation: { name: "fade-slide bottom" },
-          link: "#",
+          link: "#contactus",
         },
       ],
     },
   ],
 };
-  //   services: [
-  //     {
-  //       title: "Wellness Programs",
-  //       icon: OfferOneImageOne,
-  //       animation: { name: "fade-slide top" },
-  //       link: "#",
-  //     },
-  //     {
-  //       title: "Mental Wellness",
-  //       icon: OfferOneImageTwo,
-  //       animation: { name: "fade-slide bottom" },
-  //       link: "#",
-  //     },
-  //     {
-  //       title: "Interactive Webinars",
-  //       icon: OfferOneImageThree,
-  //       animation: { name: "fade-slide left" },
-  //       link: "#",
-  //     },
-  //     {
-  //       title: "Doctor on call",
-  //       icon: OfferOneImageFour,
-  //       animation: { name: "fade-slide right" },
-  //       link: "#",
-  //     },
-  //   ],
-
-// import OfferOneImageOne from "@/assets/imgs/ouroffer/image1.png";
-// import OfferOneImageTwo from "@/assets/imgs/ouroffer/image2.png";
-// import OfferOneImageThree from "@/assets/imgs/ouroffer/image3.png";
-// import OfferOneImageFour from "@/assets/imgs/ouroffer/image4.png";
-// import Arrow from "@/assets/imgs/ouroffer/Arrow.png";
-
-// export const data = {
-//   title: {
-//     sliceOne: "Curated for businesses and individuals alike",
-//   },
-//   arrow: Arrow,
-//   categories: [
-//     "Wellness Programs",
-//     "Mental Wellness",
-//     "Interactive Webinars",
-//     "Doctor on Call"
-//   ],
-//   services: [
-//     {
-//       title: "Wellness Programs",
-//       icon: OfferOneImageOne,
-//       animation: { name: "fade-slide top" },
-//       link: "#",
-//     },
-//     {
-//       title: "Mental Wellness",
-//       icon: OfferOneImageTwo,
-//       animation: { name: "fade-slide bottom" },
-//       link: "#",
-//     },
-//     {
-//       title: "Interactive Webinars",
-//       icon: OfferOneImageThree,
-//       animation: { name: "fade-slide left" },
-//       link: "#",
-//     },
-//     {
-//       title: "Doctor on Call",
-//       icon: OfferOneImageFour,
-//       animation: { name: "fade-slide right" },
-//       link: "#",
-//     },
-//   ],
-// };
